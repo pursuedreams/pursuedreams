@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        html,body,div,p,span{padding:0;margin:0;}
+        .dragbox{
+            width:100%;
+            height:300px;
+            border:1px solid #999;
+            clear:both;
+        }
+        .fl{float:left;}
+        .dragbox-l,.dragbox-r{width:50%;height:100%;}
+        .dragbox-l{background:#136fbd;}
+        .dragbox-r{background:#ff464d;}
+        .dragbox label{float: left;width: 0.7%;height: 300px;
+            position: absolute;cursor: e-resize;}
+        .dragbar{left: 49.3%;background: #bd3f13;}
+        </style>
+    </head>
+    <body>
+    <div class="dragbox">
+        <div class="dragbox-l fl">left</div>
+        <label class="dragbar"></label>
+        <div class="dragbox-r fl">right</div>
+    </div>
+    <div id="test"></div>
+    <br/>
+    <br/>
+    <br/>
+    <h3>好的资源要共享，爱生活爱搬砖，送美好世界一万个么么哒~ ~ ~</h3>
+    <div>备注：适用于那种pc界面左右布局可以动态调整的等等。</div>
+    <p>暂兼容 火狐、IE、谷歌（只测了这三个游览器）</p>
+
+    </body>
+    <script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/DragDiv.js"></script>
+</html>
